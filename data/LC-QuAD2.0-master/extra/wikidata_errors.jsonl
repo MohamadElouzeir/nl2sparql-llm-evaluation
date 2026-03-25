@@ -1,0 +1,20 @@
+{"uid": 23261, "error": "ReadTimeout", "query_type": "SELECT", "query": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q7187 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'vgf')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 "}
+{"uid": 19590, "error": "RequestException: 400 Client Error: Bad Request for url: https://query.wikidata.org/sparql?format=json", "query_type": "ASK", "query": "ASK WHERE { wd:Q302 wdt:P2218 ?obj filter(?obj = t1417656573) } "}
+{"uid": 9083, "error": "RequestException: 400 Client Error: Bad Request for url: https://query.wikidata.org/sparql?format=json", "query_type": "SELECT", "query": "SELECT ?obj WHERE { wd:Q25267 p:P144 ?s . ?s ps:P144 ?obj . ?s pq:P2534 ?x filter(contains(?x,'^{\\circ}\\text{C} = \\text{K} - 273.15')) }"}
+{"uid": 1721, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT (COUNT(?sub) AS ?value ) { ?sub wdt:P1066 wd:Q180278 }"}
+{"uid": 20726, "error": "ConnectionError", "query_type": "SELECT", "query": " select distinct ?sbj where { ?sbj wdt:P551 wd:Q641 . ?sbj wdt:P31 wd:Q5 } "}
+{"uid": 21135, "error": "ConnectionError", "query_type": "SELECT", "query": " select distinct ?sbj where { ?sbj wdt:P118 wd:Q50783 . ?sbj wdt:P31 wd:Q17374546 } "}
+{"uid": 16454, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT ?answer WHERE { wd:Q269880 wdt:P287 ?X . ?X wdt:P112 ?answer}"}
+{"uid": 23556, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT DISTINCT ?sbj ?sbj_label WHERE { ?sbj wdt:P31 wd:Q32880 . ?sbj rdfs:label ?sbj_label . FILTER(CONTAINS(lcase(?sbj_label), 'style')) . FILTER (lang(?sbj_label) = 'en') } LIMIT 25 "}
+{"uid": 8897, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT ?value WHERE { wd:Q1729 p:P190 ?s . ?s ps:P190 wd:Q52842 . ?s pq:P580 ?value}"}
+{"uid": 13310, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT ?answer WHERE { wd:Q27621 wdt:P1075 ?answer . ?answer wdt:P166 wd:Q18080431}"}
+{"uid": 19373, "error": "ConnectionError", "query_type": "ASK", "query": "ASK WHERE { wd:Q73341 wdt:P2097 ?obj filter(?obj > 0.8) } "}
+{"uid": 138, "error": "ConnectionError", "query_type": "ASK", "query": "ASK WHERE { wd:Q2695156 wdt:P1441 wd:Q15891648 }"}
+{"uid": 29607, "error": "ConnectionError", "query_type": "SELECT", "query": "select distinct ?answer where { wd:Q162255 wdt:P3402 ?answer}"}
+{"uid": 29831, "error": "ConnectionError", "query_type": "SELECT", "query": " select distinct ?sbj where { ?sbj wdt:P140 wd:Q60995 . ?sbj wdt:P31 wd:Q427961 } "}
+{"uid": 708, "error": "ConnectionError", "query_type": "ASK", "query": "ASK WHERE { wd:Q483382 wdt:P69 wd:Q168756 . wd:Q483382 wdt:P69 wd:Q5466480 }"}
+{"uid": 14946, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT ?answer WHERE { wd:Q49502848 wdt:P171 ?X . ?X wdt:P1672 ?answer}"}
+{"uid": 10705, "error": "ConnectionError", "query_type": "SELECT", "query": "SELECT ?value1 ?value2 WHERE { wd:Q199894 p:P793 ?s . ?s ps:P793 wd:Q125375 . ?s pq:P276 ?value1 . ?s pq:P585 ?value2 }"}
+{"uid": 22834, "error": "ConnectionError", "query_type": "SELECT", "query": " select distinct ?obj where { wd:Q2469 wdt:P398 ?obj . ?obj wdt:P31 wd:Q184348 } "}
+{"uid": 12532, "error": "RequestException: 400 Client Error: Bad Request for url: https://query.wikidata.org/sparql?format=json", "query_type": "SELECT", "query": "SELECT ?answer WHERE { wd:Q761414 wdt:P1269 ?answer . ?answer wdt:P2534 ?x FILTER(contains(?x,'\\phi: \\nabla\\phi = \\vec{A}'))}"}
+{"uid": 2576, "error": "ReadTimeout", "query_type": "SELECT", "query": "select ?ent where { ?ent wdt:P31 wd:Q523 . ?ent wdt:P2214 ?obj } ORDER BY DESC(?obj)LIMIT 5 "}

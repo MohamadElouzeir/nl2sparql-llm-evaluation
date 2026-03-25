@@ -1,0 +1,15 @@
+{
+  "total_processed": 6046,
+  "answered": 4700,
+  "no_answers": 1326,
+  "errors": 20,
+  "input": "data/LC-QuAD2.0-master/dataset/test.json",
+  "endpoint": "https://query.wikidata.org/sparql",
+  "timeout": 30,
+  "retries": 3,
+  "sleep": 1.0,
+  "max_queries": null,
+  "resume": true,
+  "output_with_answers": "experiment/output\\wikidata_with_answers.json",
+  "output_no_answers": "experiment/output\\wikidata_no_answers.json"
+}

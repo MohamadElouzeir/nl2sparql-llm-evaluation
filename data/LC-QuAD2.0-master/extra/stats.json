@@ -1,0 +1,11 @@
+{
+  "total": 4000,
+  "nulls": 1987,
+  "errors": 0,
+  "input": "data/LC-QuAD-data/train-data.json",
+  "endpoint": "https://dbpedia.org/sparql",
+  "timeout": 20,
+  "retries": 3,
+  "sleep": 0.3,
+  "max_queries": null
+}
