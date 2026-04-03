@@ -1,0 +1,14 @@
+{
+  "source": "data/LC-QuAD2.0-master/extra/wikidata_with_answers.json",
+  "curated": "data/LC-QuAD2.0-master/extra/wikidata_with_answers_curated_50.json",
+  "uid_key": "uid",
+  "source_total": 4700,
+  "curated_total": 50,
+  "source_unique_uids": 4700,
+  "source_duplicate_uids": 0,
+  "copied_answers_rows": 50,
+  "copied_canonical_rows": 50,
+  "missing_in_source": 0,
+  "source_answer_empty_rows": 0,
+  "dry_run": false
+}

@@ -1,0 +1,1 @@
+{"uid": 21092, "index": 2567, "error": "RequestException: Response ended prematurely", "sparql_wikidata": "select distinct ?sbj where { ?sbj wdt:P140 wd:Q9592 . ?sbj wdt:P31 wd:Q5 }"}

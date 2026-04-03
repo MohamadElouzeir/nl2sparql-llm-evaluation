@@ -1,0 +1,19 @@
+{
+  "input": "data/LC-QuAD2.0-master/extra/wikidata_with_answers.json",
+  "output": "data/LC-QuAD2.0-master/extra/wikidata_with_answers.json",
+  "endpoint": "https://query.wikidata.org/sparql",
+  "timeout": 60,
+  "retries": 8,
+  "sleep": 0.8,
+  "resume": true,
+  "skip_filled": true,
+  "max_queries": null,
+  "total_rows": 4700,
+  "attempted_queries": 130,
+  "updated_rows": 130,
+  "skipped_filled": 4570,
+  "canonical_backfilled": 0,
+  "errors": 0,
+  "errors_log": "data/LC-QuAD2.0-master/extra/wikidata_with_answers_fill_errors.jsonl",
+  "elapsed_seconds": 384.69
+}
