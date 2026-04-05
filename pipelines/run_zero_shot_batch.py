@@ -8,7 +8,7 @@ from openai import OpenAI
 
 from run_batch_generation import BatchConfig, make_run_id, run_batch_generation
 
-DEFAULT_INPUT = "data/LC-QuAD2.0-master/extra/wikidata_with_answers_curated_50.json"
+DEFAULT_INPUT = "data/LC-QuAD2.0-master/extra/wikidata_with_answers.json"
 DEFAULT_OUTPUT = "outputs/predictions_zero_shot.jsonl"
 DEFAULT_MODEL = "gpt-5"
 DEFAULT_ERRORS = "outputs/predictions_zero_shot_generation_errors.jsonl"
@@ -45,18 +45,8 @@ def build_json_schema() -> Dict[str, Any]:
             "additionalProperties": False,
             "properties": {
                 "sparql_query": {"type": "string"},
-                "confidence": {"type": "number", "minimum": 0, "maximum": 1},
-                "selected_qids": {"type": "array", "items": {"type": "string"}},
-                "selected_predicates": {"type": "array", "items": {"type": "string"}},
-                "reasoning_summary": {"type": "string"},
             },
-            "required": [
-                "sparql_query",
-                "confidence",
-                "selected_qids",
-                "selected_predicates",
-                "reasoning_summary",
-            ],
+            "required": ["sparql_query"],
         },
     }
 
@@ -100,7 +90,8 @@ def make_zero_shot_generator(client: OpenAI, model: str):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run zero-shot batch generation.")
+    parser = argparse.ArgumentParser(
+        description="Run zero-shot batch generation.")
     parser.add_argument("--input", default=DEFAULT_INPUT)
     parser.add_argument("--output", default=DEFAULT_OUTPUT)
     parser.add_argument("--model", default=DEFAULT_MODEL)
@@ -148,7 +139,8 @@ def main() -> None:
     if args.user_agent:
         config.user_agent = args.user_agent
 
-    run_batch_generation(config=config, generate_fn=make_zero_shot_generator(client=client, model=args.model))
+    run_batch_generation(config=config, generate_fn=make_zero_shot_generator(
+        client=client, model=args.model))
 
 
 if __name__ == "__main__":
